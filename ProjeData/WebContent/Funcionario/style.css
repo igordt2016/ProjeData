@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(../Assets/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.box{
+    display: flex;
+    width: 930px;
+}
+.img-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px  0 0 20px;
+}
+.img-box img{
+    width: 100%;
+}
+.form-box{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+.form-box h2{
+    font-size: 30px;
+}
+.form-box p{
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.form-box p a{
+    color: #FF008A;
+    text-decoration: none;
+}
+.form-box form{
+    margin: 20px 0;
+}
+form .input-group{
+    margin-bottom: 15px;
+}
+form .input-group label{
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group select{
+    color: #3D3D3D;   
+    background-color: rgba(255, 255, 255, 0.32); 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+	border-radius: 20px;
+}
+
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form .input-group input:focus{
+    border-color: #ff008869;
+}
+.input-group button{
+    width: 100%;
+    height: 47px;
+    background: #FF008A;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-Listar button{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width:930px) {
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.item3 { grid-area: main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.32);
+  border-radius: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.voltar img{
+	
+	max-width: 50px;
+	max-height: 50px;
+	float: left;
+	
+}
+
+.voltarAlter img{
+	
+	max-width: 50px;
+	max-height: 50px;
+	
+}
+
+.excluir img{
+	
+	max-width: 23px;
+	max-height: 23px;
+	width: auto;
+	height: auto;	
+	
+}
+
+
+.alterar img{
+	
+	max-width: 23px;
+	max-height: 23px;
+	width: auto;
+	height: auto;	
+	
+}
+
+.btn-Aumento button{
+	
+	margin-right: 35%;
+	width: 200px;
+	height: 40px;
+	background: #FF008A;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	color: white;
+	float: right;
+	cursor: pointer;
+	font-size: 16px;
+	
+}
+
+.tabela table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tabela td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	background-color: rgba(255, 255, 255, 0.32);
+}
+
+.tabela tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.32);
+}
+
+.tabela img{
+	
+	max-width: 23px;
+	max-height: 23px;
+	width: auto;
+	height: auto;	
+}
